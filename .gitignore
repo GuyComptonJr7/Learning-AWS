@@ -1,0 +1,5 @@
+/s3/terraform/.terraform/**
+/s3/terraform/.terraform.lock.hcl
+/s3/terraform/statefile.tfplan
+/s3/terraform/terraform.tfstate
+/s3/terraform/terraform.tfstate.backup
