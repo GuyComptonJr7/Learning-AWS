@@ -6,19 +6,6 @@ data "aws_iam_user" "sts-bucket-user" {
   user_name = "sts-machine-user"
 }
 
-data "aws_iam_policy_document" "assume_role" {
-  statement {
-    effect = "Allow"
-
-    principals {
-      type        = "Service"
-      identifiers = ["ec2.amazonaws.com"]
-    }
-
-    actions = ["sts:AssumeRole"]
-  }
-}
-
 data "aws_iam_policy_document" "policy" {
   statement {
     effect    = "Allow"
